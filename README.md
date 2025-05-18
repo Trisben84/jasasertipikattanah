@@ -1,1 +1,124 @@
-# jasasertipikattanah
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasa Pengurusan Sertipikat Tanah</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #1b5e20;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    .section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #43a047;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #e0e0e0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jasa Pengurusan Sertipikat Tanah</h1>
+    <p>Proses Cepat, Aman, dan Terpercaya</p>
+  </header>
+
+  <nav>
+    <a href="#layanan">Layanan</a>
+    <a href="#prosedur">Prosedur</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <main>
+    <section class="section" id="layanan">
+      <h2>Layanan Kami</h2>
+      <ul>
+        <li>Pembuatan Sertipikat Hak Milik (SHM)</li>
+        <li>Balik Nama Sertipikat</li>
+        <li>Pemecahan dan Penggabungan Sertipikat</li>
+        <li>Pengecekan Sertipikat dan Validasi Dokumen</li>
+      </ul>
+    </section>
+
+    <section class="section" id="prosedur">
+      <h2>Prosedur Pengurusan</h2>
+      <ol>
+        <li>Konsultasi Awal dan Pengumpulan Dokumen</li>
+        <li>Verifikasi Dokumen oleh Tim Kami</li>
+        <li>Pengurusan di Kantor Pertanahan</li>
+        <li>Penyerahan Sertipikat ke Pemohon</li>
+      </ol>
+    </section>
+
+    <section class="section" id="kontak">
+      <h2>Formulir Kontak</h2>
+      <form onsubmit="kirimData(event)">
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Pesan:</label>
+        <textarea name="pesan" rows="5" required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Jasa Pengurusan Sertipikat Tanah. Semua Hak Dilindungi.
+  </footer>
+
+  <script>
+    function kirimData(event) {
+      event.preventDefault();
+      alert("Pesan Anda telah dikirim. Terima kasih telah menghubungi kami.");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
